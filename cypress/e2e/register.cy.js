@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-const {canvasToBlob} = require("blob-util");
 
 describe("Register page", () => {
     it("Visit register page", () => {
