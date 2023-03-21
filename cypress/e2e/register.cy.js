@@ -1,12 +1,14 @@
 /// <reference types="Cypress" />
 
+const locators = require('../fixtures/locators.json')
+
 describe("Register page", () => {
     it("Visit register page", () => {
-        cy.visit('https://gallery-app.vivifyideas.com/register')
+        cy.visit('/register')
     });
     it('Successful register', () => {
-        cy.visit("https://gallery-app.vivifyideas.com/register");
-        cy.get('input[id="first-name"]').type('Natalija');
+        cy.visit("/register");
+        cy.get().type('Natalija');
         cy.get('input[id="last-name"]').type('Radic');
         cy.get('input[id="email"]').type('natka.radic@gmail.com');
         cy.get('input[id="password"]').type('Naftalija1986');
