@@ -4,7 +4,7 @@
   "description": "Homework",
   "main": "index.js",
   "scripts": {
-    "cypress": "cypress open"
+    "cypress": "./node_module/.bin/cypress open"
   },
   "author": "NatalijaRadic",
   "license": "ISC",
